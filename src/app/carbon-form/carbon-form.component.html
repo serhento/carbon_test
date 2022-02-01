@@ -1,0 +1,21 @@
+<div id="carbon-popup" [class.form-active]="carbonService.formIsActive">
+  <div id="carbon-popup-body">
+    <div id="carbon-popup-body-content">
+      <input
+        type="text"
+        height="30"
+        placeholder="Название заметки"
+        [(ngModel)]="todoTitle"
+      >
+      <textarea
+        placeholder="Текст заметки"
+        rows="30"
+        [(ngModel)]="todoText"
+      ></textarea>
+      <div id="buttons">
+        <button (click)="addTodo()">Добавить заметку</button>
+        <button (click)="closeForm()">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
